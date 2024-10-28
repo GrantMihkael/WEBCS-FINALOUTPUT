@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -25,54 +23,51 @@
             background-color: #fff;
             color: #000;
             padding: 10px;
-            height: 80px; /* Fixed header height */
+            height: 80px;
             display: flex;
             align-items: center; 
-            justify-content: space-between; /* Space between left and right sections */
+            justify-content: space-between;
         }
 
         .header-left {
             display: flex;
-            align-items: center; /* Center the logo and links vertically */
+            align-items: center;
         }
 
         header img {
-            max-height: 60px; /* Set maximum height for the logo */
-            height: auto; /* Maintain aspect ratio */
-            margin-right: 10px; /* Space between logo and links */
+            max-height: 60px;
+            height: auto;
+            margin-right: 10px;
         }
 
         .header-link {
             color: #000;
             text-decoration: none;
-            margin: 0 10px; /* Space between the links */
+            margin: 0 10px;
             font-size: 18px;
         }
 
-        /* Main Content */
         main {
             padding: 40px;
             text-align: center;
         }
 
-        /* Slideshow */
         .slideshow {
             position: relative;
             max-width: 500px;
             margin: auto;
             overflow: hidden;
-            border: 3px solid #fff; /* White border */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft shadow */
+            border: 3px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
         .slides {
             display: none;
-            width: 100%; /* Ensures the image takes the full width */
+            width: 100%;
             height: 500px;
         }
 
-        /* Footer */
         footer {
             background-color: #fff;
             color: #000;
@@ -86,7 +81,6 @@
             gap: 20px;
         }
 
-        /* Social Follow Text */
         footer .social-follow {
             background-color: #000;
             color: #fff;
@@ -94,40 +88,34 @@
             border-radius: 5px;
         }
 
-        /* Social Icons */
         footer .social-icons {
             display: flex;
             gap: 20px;
         }
 
-        /* Social Item (Icon + Text) */
         footer .social-item {
             display: flex;
             align-items: center;
             gap: 5px;
         }
 
-        /* Social Media Icons */
         footer .social-icons img {
             width: 30px;
             height: auto;
         }
 
-        /* Rights Reserved */
         footer .rights-reserved {
             margin-left: auto;
         }
     </style>
 </head>
 <body>
-     <!-- Your content goes here -->
-    <!-- Bootstrap JS and dependencies (optional) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <header>
         <div class="header-left">
-            <img src="https://imgur.com/bpw7IUT.png" alt="Logo"> <!-- Updated Logo -->
-            <a href="homepage.html" class="header-link">Home</a>
+            <img src="https://imgur.com/bpw7IUT.png" alt="Logo">
+            <a href="index.html" class="header-link">Home</a>
             <a href="menu.html" class="header-link">Menu</a>
             <a href="contact.html" class="header-link">Contact</a>
             <a href="order.html" class="header-link">Order Online</a>
@@ -136,7 +124,7 @@
 
     <main>
         <section>
-            <h2>Our Beautiful Places</h2> <!-- Added heading for the section -->
+            <h2>Our Beautiful Places</h2>
             <div class="slideshow">
                 <img class="slides" src="https://imgur.com/q1NCYDm.jpg" alt="Place 1">
                 <img class="slides" src="https://imgur.com/drouiam.jpg" alt="Place 2">
@@ -173,7 +161,6 @@
     </footer>
 
     <script>
-        // Slideshow functionality
         let slideIndex = 0;
         showSlides();
 
@@ -185,9 +172,8 @@
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}    
             slides[slideIndex - 1].style.display = "block";  
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
+            setTimeout(showSlides, 3000);
         }
     </script>
-
 </body>
 </html>
